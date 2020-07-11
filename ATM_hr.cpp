@@ -9,6 +9,8 @@ int main(){
 
     if( (x%5==0) && (x+0.5 < y) )
         cout << y-(float)x - 0.5;
+    else
+        cout<<y;
 
     return 0;
 }
