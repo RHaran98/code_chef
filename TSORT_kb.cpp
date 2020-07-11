@@ -29,7 +29,7 @@ void mergesort(int start_ind, int end_ind)
 		int index = start_ind;
 		for(int i = 0, j = 0; i < s1 || j < s2;)
 		{
-			if(j == s2 || arr1[i] <= arr2[j])
+			if(i != s1 && (j == s2 || arr1[i] <= arr2[j]))
 			{
 				number_list[index] = arr1[i];
 				i++; index++;
