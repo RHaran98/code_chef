@@ -1,6 +1,6 @@
 #include <iostream>
 
-int LargestSum(int** a, int i, int j, int rows)
+int LargestSum(int a[100][100], int i, int j, int rows)
 {
 	if(i+1 > rows || j + 1 > rows)
 	{
@@ -18,11 +18,7 @@ int main()
 		int rows;
 		std::cin>>rows;
 
-		int **arr = new int* [rows];
-		for(int i = 0; i < rows; i++)
-		{
-			arr[i] = new int [rows];
-		}
+		int arr[100][100];
 
 		for(int i = 0; i < rows; i++)
 		{
@@ -35,10 +31,5 @@ int main()
 		int sum = LargestSum(arr, 0, 0, rows);
 		std::cout<<sum<<"\n";
 
-		for(int i = 0; i < rows; i++)
-		{
-			delete [] arr[i];
-		}
-		delete [] arr;
 	}
 }
