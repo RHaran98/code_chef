@@ -20,7 +20,7 @@ int main()
 			std::cout<<"Destroyer\n";
 			break;
 			case 'f':
-			std::cout<<"Friagte\n";
+			std::cout<<"Frigate\n";
 			break;
 		}
 	}
