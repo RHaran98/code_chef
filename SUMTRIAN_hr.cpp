@@ -8,7 +8,7 @@ int main() {
     int t;
     cin>>t;
     int size,n;
-    int array[1001*500];
+    int array[101*50];
     int bottom_max;
     int top,top_left;
     while (t--) {
