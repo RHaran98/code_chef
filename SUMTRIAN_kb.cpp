@@ -1,14 +1,5 @@
 #include <iostream>
 
-int LargestSum(int a[100][100], int i, int j, int rows)
-{
-	if(i+1 > rows || j + 1 > rows)
-	{
-		return 0;
-	}
-	return a[i][j] + std::max(LargestSum(a, i+1, j, rows), LargestSum(a, i+1, j+1, rows));
-}
-
 int main()
 {
 	int tc;
@@ -28,8 +19,13 @@ int main()
 			}
 		}
 
-		int sum = LargestSum(arr, 0, 0, rows);
-		std::cout<<sum<<"\n";
-
+		for(int i = rows-2; i >= 0; i--)
+		{
+			for(int j = 0; j <= i; j++)
+			{
+				arr[i][j] += std::max(arr[i+1][j], arr[i+1][j+1]);
+			}
+		}
+		std::cout<<arr[0][0]<<"\n";
 	}
 }
