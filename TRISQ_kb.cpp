@@ -8,7 +8,7 @@ int main()
 	{
 		int n;
 		std::cin>>n;
-		int levels = (n - (n % 2 + 2)) / 2
+		int levels = (n - (n % 2 + 2)) / 2;
 		if(levels < 1)
 		{
 			std::cout<<0<<"\n";
