@@ -15,7 +15,6 @@ int main()
 		if(s == "CLICK")
 		{
 			std::cin>>ind;
-			std::cout<<ind<<"\n";
 			if(list_of_tweets[ind])
 			{
 				list_of_tweets[ind]--;
@@ -30,9 +29,9 @@ int main()
 		else
 		{
 			open_tweets = 0;
-			for(int n : list_of_tweets)
+			for(int i = 0; i < tweets+1; i++)
 			{
-				n = 0;
+			    list_of_tweets[i] = 0;
 			}
 		}
 
