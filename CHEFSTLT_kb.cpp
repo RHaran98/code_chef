@@ -6,7 +6,7 @@ int main()
 	std::cin>>tc;
 	while(tc--)
 	{
-		string s1, s2;
+		std::string s1, s2;
 		std::cin>>s1>>s2;
 
 		int qcount = 0;
