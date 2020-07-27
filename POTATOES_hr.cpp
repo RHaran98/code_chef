@@ -4,10 +4,10 @@ using namespace std;
 int main() {
     ios_base::sync_with_stdio(false); //Make cin as fast as scanf
 	cin.tie(NULL);
-    int primes[1011] = {0};
+    int primes[2005] = {0};
     primes[0] = primes[1] = 1;
-    for (int i = 2; i <= 505; i++) {
-        for (int j = 2*i; j < 1011; j+=i) {
+    for (int i = 2; i <= 1002; i++) {
+        for (int j = 2*i; j < 2005; j+=i) {
             primes[j] = 1;
         }
     }
