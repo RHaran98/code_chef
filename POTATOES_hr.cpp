@@ -18,7 +18,7 @@ int main() {
         cin >> x >> y;
         x += y;
         
-        for (nearest_prime = x+1; nearest_prime < 1011; nearest_prime++ ) 
+        for (nearest_prime = x+1; nearest_prime < 2005; nearest_prime++ ) 
             if (primes[nearest_prime] == 0)
                 break;
 
