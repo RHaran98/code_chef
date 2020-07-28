@@ -16,4 +16,5 @@ int main()
 
 		if(isRectangle) std::cout<<"YES\n";
 		else std::cout<<"NO\n";
+	}
 }
