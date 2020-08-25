@@ -8,8 +8,7 @@ int main()
 	{
 		long int n;
 		std::cin>>n;
-		height = 1;
-		while(n - height * (height + 1) / 2 >= height + 1) height++;
-		std::cout<<height<<"\n";
+		int root = floor(-0.5 + sqrt(0.5 * 0.5 - 4 * 0.5 * (-n)));
+		std::cout<<root<<"\n";
 	}
 }
